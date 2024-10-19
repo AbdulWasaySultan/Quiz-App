@@ -48,17 +48,17 @@ struct QuizBrain{
     mutating func getAnswerOptions() -> [String]{
         return quiz[questionNumber].answer
     }
-        
+    
     mutating func nextQuestion(){
-            if questionNumber + 1 < quiz.count{
-                questionNumber += 1
-                
-            }else{
-                questionNumber = 0
-                score = 0
-            }
+        if questionNumber + 1 < quiz.count{
+            questionNumber += 1
+            
+        }else{
+            questionNumber = 0
+            score = 0
         }
-        
-        
     }
+    
+    
+}
 
